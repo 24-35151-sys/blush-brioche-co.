@@ -1,0 +1,99 @@
+body { font-family: sans-serif; margin: 0; background: #b5d1ee; }
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 50px;
+    background: white;
+    border-bottom: 1px solid #ddd;
+    font-weight: bold;
+}
+nav a { margin: 0 10px; text-decoration: none; color: black; font-size: 14px; }
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 50px; 
+    background: white;
+    border-bottom: 1px solid #ddd;
+}
+.profile-info { display: flex; align-items: center; gap: 20px; }
+.avatar { font-size: 60px; }
+.animation-box {
+    width: 300px; height: 100px;
+    background: #b7e1ff; display: flex;
+    align-items: center; justify-content: center;
+}
+
+/* Grids */
+.mid-grid, .media-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.card, .quote, .media-item {
+    padding: 60px 20px;
+    background: white;
+    border: 0.5px solid #eee;
+}
+
+.quote { font-family: serif; font-size: 24px; font-weight: bold; }
+
+.media-item span {
+    font-size: 40px;
+    display: block;
+    background: #ddd;
+    padding: 40px;
+    margin-bottom: 10px;
+}
+
+.avatar img {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #000;
+}
+/* Button Hover Effects */
+.btn {
+    padding: 8px 12px;
+    transition: background 0.3s, color 0.3s;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    background-color: #555; /* Changes color when mouse is over it */
+    color: #ff9900; /* Example accent color */
+}
+
+/* Icon Button Effects */
+.icon-btn {
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px;
+    transition: transform 0.2s;
+    display: inline-block;
+}
+
+.icon-btn:hover {
+    transform: scale(1.2); /* Makes the icon pop out slightly */
+}
+
+/* Profile Link Styling */
+.name-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.name-link:hover {
+    text-decoration: underline;
+}
+
+.avatar-link:hover .avatar {
+    opacity: 0.8;
+    cursor: pointer;
+}
